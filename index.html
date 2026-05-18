@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Blog Platform</h1>
+
+    <div id="auth">
+        <h2>Login / Register</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <select id="role">
+            <option>User</option>
+            <option>Admin</option>
+        </select>
+
+        <button onclick="login()">Login</button>
+        <button onclick="register()">Register</button>
+    </div>
+
+    <div id="blog-section" style="display:none;">
+        <h2>Create Blog Post</h2>
+
+        <input type="text" id="title" placeholder="Blog Title">
+        <textarea id="content" placeholder="Write blog content"></textarea>
+
+        <button onclick="addPost()">Add Post</button>
+
+        <h2>Blog Posts</h2>
+        <div id="posts"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
