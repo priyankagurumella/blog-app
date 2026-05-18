@@ -21,12 +21,13 @@ app.get("/", (req, res) => {
     res.send("Blog Backend Running");
 });
 
-// REST APIs
+// Posts API
 app.use(
     "/api/posts",
     require("./routes/posts")
 );
 
+// Comments API
 app.use(
     "/api/comments",
     require("./routes/comments")
